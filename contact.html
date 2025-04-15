@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="assets/css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href='assets/css/style.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">SHEKH MUBASHIR</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="portfolio.php" id="home-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+						 <!-- Dropdown Menu -->
+                               
+                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+ 						
+  
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+
+
+<!-- Full-Page Contact Section -->
+<section class="page-section bg-primary" id="about">
+    <div class="skill px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="text-white mt-0">Contect Me</h2>
+                <hr class="divider divider-light" />
+                <p class="text-white-75 mb-4" align="justify">
+                    Have a project in mind? Let's bring your ideas to life! Whether you need a stunning website, a dynamic web application, or a custom solution tailored to your needs, I'm here to help. As a full-stack web developer, I specialize in creating high-quality, user-friendly, and scalable solutions. Reach out today, and let's build something amazing together.
+                </p>
+             </div>
+        </div>
+    </div>
+</section> 
+
+<section class="page-section" id="contact" data-aos="fade-up" data-aos-duration="1500">
+    <div class="contact1">
+        <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="mt-0" style="color:black;">Let's Get In Touch!</h2>
+            <p class="mb-5" style="color:black">Ready to start your next project with me? Send a message and I'll get back to you as soon as possible!</p>
+        </div>
+
+        <div class="contact-contact1">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+                <div class="info-item">
+                    <i class='fas fa-phone-alt' style='font-size:36px'></i>
+                    <span>Call Us</span>
+                    <p>+91 8988194697</p>
+                </div>
+                <div class="info-item">
+                    <i class='fas fa-map-marker-alt' style='font-size:36px'></i>
+                    <span>Location</span>
+                    <p>WARD NO-16, KAZI KAZI PARA, CHENGAIL, Uluberia, West Bengal 711308</p>
+                </div>
+                <div class="info-item">
+                    <i class='far fa-clock' style='font-size:36px'></i>
+                    <span>Business Hours</span>
+                    <p>24/7</p>
+                </div>
+            </div>
+
+            <div class="contact-form" data-aos="fade-left" data-aos-duration="1200">
+                <form method="post">
+				  <span style="color:#000000"><?php echo $succMsg ?></span>
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Enter your Name" required>
+                        <input type="email" name="email" placeholder="Enter a valid email address" required>
+                    </div>
+                    <input type="text" name="address" placeholder="Enter your Address">
+                    <textarea name="message" placeholder="Enter your Message" required></textarea>
+                    <button class="contact--button" type="submit" name="submit" data-aos="flip-up" data-aos-duration="1000">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-contact1" data-aos="fade-up" data-aos-duration="1500">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.36001849347!2d88.12191097435064!3d22.49067173596989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0287ecd4f35417%3A0x505f9af284026b83!2sFFRH%20SHOP!5e0!3m2!1sen!2sin!4v1744699735909!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<style>
+.page-section   {
+ 	   animation: slideUp 1s ease-in-out forwards;
+ }
+
+#contact {
+    position: relative;
+    width: 100%;
+    min-height: 150vh; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0; /* Increased padding */
+    animation: slideUp 1s ease-in-out forwards;
+    overflow: hidden;
+}
+
+.contact1 {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 50px 20px; /* Added padding */
+}
+
+.contact-contact1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Increased spacing */
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.info-item {
+    margin: 25px 0; /* Increased spacing */
+    font-size: 20px; /* Increased font size */
+	color:black;
+}
+
+.info-item i {
+    margin-right: 15px;
+    color: #f4623a;
+    font-size: 42px; /* Increased icon size */
+}
+
+.contact-form {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px; /* Increased spacing */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Increased spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 18px; /* Increased font size */
+}
+
+textarea {
+    height: 150px; /* Increased text area size */
+}
+
+.contact--button {
+    background: var(--bs-orange);
+    border: none;
+    padding: 14px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 50%; /* Increased button size */
+    margin: auto;
+}
+
+.contact--button:hover {
+    background: orange;
+    box-shadow: 2px 2px 15px rgba(255, 165, 0, 0.7);
+    color: #000000;
+}
+
+.map-contact1 {
+    width: 100%;
+    height: 500px; /* Increased map size */
+    margin-top: 50px; /* Added more spacing */
+}
+
+.map-contact1 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .page-section {
+        min-height: 250vh; /* Increased height for mobile */
+    }
+    
+    .contact-contact1 {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .contact--button {
+        width: 100%; /* Full width button on mobile */
+    }
+}
+
+</style>
+
+
+  
+<!-- Footer-->
+<footer class="bg-light py-5 bg-primary">
+    <div class="container px-4 px-lg-5">
+        <!-- Navigation Links -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-dark">Quick Links</h5>
+               <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.php" style="color:#000000;"  id="home-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+						 <!-- Dropdown Menu -->
+                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin/signin.php">Admin</a></li>
+                    </ul>
+            </div>
+
+            <!-- Address & Contact -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-dark">Contact Us</h5>
+                <p class="text-muted mb-1"><strong>Address:</strong>WARD NO-16, KAZI KAZI PARA, CHENGAIL, Uluberia, West Bengal 711308</p>
+                <p class="text-muted mb-1"><strong>Phone:</strong> +91 8988194697</p>
+                <p class="text-muted mb-1"><strong>Email:</strong> shekhmubashir1119@gmail.com</p>
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-lg-4 col-md-12">
+                <h5 class="text-dark">Find Us</h5>
+                <div style="border-radius: 10px; overflow: hidden;">
+                     <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.36001849347!2d88.12191097435064!3d22.49067173596989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0287ecd4f35417%3A0x505f9af284026b83!2sFFRH%20SHOP!5e0!3m2!1sen!2sin!4v1744699735909!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" 
+            height="100" 
+            style="border:0; min-height: 200px;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+                </div>
+            </div>
+        </div>
+
+            <!-- Subscribe Section -->
+            <div class="col-lg-3 col-md-12">
+                <h5 class="text-dark">Subscribe For Projects</h5>
+                <form action="#" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter email" required>
+                        <button class="btn btn-subscribe" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright & Credits -->
+        <div class="text-center text-muted mt-4">
+            <div>Copyright &copy; 2025 - Shekh Mubashir</div>
+            <div>Distributed By <a href="#" class="text-dark">MIT</a></div>
+        </div>
+    </div>
+</footer>
+
+
+<style>
+/* Footer General Styling */
+footer {
+    padding: 50px 0;
+    background-color: #f8f9fa !important; /* Light background */
+    color: #212529 !important; /* Dark text for contrast */
+}
+
+/* Footer Headings */
+footer h5 {
+    color: #000 !important; /* Strong black for clarity */
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Footer Links */
+footer .nav-link {
+    color: #212529 !important; /* Dark gray for contrast */
+    transition: color 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+footer .nav-link:hover {
+    color: #f4623a !important; /* Blue on hover */
+}
+
+/* Contact Details */
+footer p {
+    color: #333 !important; /* Slightly dark gray for readability */
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* Subscribe Button */
+footer .btn-subscribe {
+    background-color: #f4623a !important; /* Deep blue */
+    color: #fff !important; /* White text */
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    border: none;
+}
+
+footer .btn-subscribe:hover {
+    background-color: orange !important; /* Darker blue on hover */
+}
+
+/* Map Styling */
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Copyright Section */
+footer .text-muted {
+    color: #212529 !important; /* Dark text */
+    font-size: 14px;
+}
+
+footer a.text-dark {
+    color: #f4623a !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a.text-dark:hover {
+    color: orange !important;
+    text-decoration: underline;
+}
+
+</style>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+		
+		<!-- my-->
+		<script src="js/slider.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+           AOS.init();
+        </script>
+
+    </body>
+</html>
