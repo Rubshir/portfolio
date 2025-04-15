@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background: #1a1a1a;
+            color: white;
+        }
+        .gate-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            background: black;
+            z-index: 10;
+            text-align: center;
+        }
+        .gate {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, #333, #000);
+            transition: transform 0.5s ease-in-out;
+        }
+        .left-gate {
+            left: 0;
+        }
+        .right-gate {
+            right: 0;
+        }
+        .welcome-content {
+            z-index: 11;
+            animation: fadeIn 2s ease-in-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .welcome-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+        .welcome-note, .content {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .spacer {
+            height: 200vh;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div class="gate-container">
+        <div class="gate left-gate"></div>
+        <div class="gate right-gate"></div>
+        <div class="welcome-content">
+            <img src="image/PHOTO.jpeg" alt="Your Photo">  
+            <div class="welcome-note"><h1>Shekh Mubashir</h1></div>
+			
+			
+	    <div class="content">
+            <h3>Welcome to My Portfolio</h3>
+ 			<p>Scroll To Know More</p>
+        </div>
+			
+        </div>
+         
+    </div>
+    <div class="spacer"></div>
+   
+ 
+    
+    <script>
+	
+	window.addEventListener("scroll", function () {
+    let scrollY = window.scrollY;
+    let maxScroll = window.innerHeight;
+    let progress = Math.min(scrollY / maxScroll, 1);
+
+    let leftGate = document.querySelector(".left-gate");
+    let rightGate = document.querySelector(".right-gate");
+    let gateContainer = document.querySelector(".gate-container");
+
+    // Move the gates faster
+    leftGate.style.transition = "transform 0.2s linear";
+    rightGate.style.transition = "transform 0.2s linear";
+    leftGate.style.transform = `translateX(-${progress * 100}%)`;
+    rightGate.style.transform = `translateX(${progress * 100}%)`;
+
+    // Hide and redirect faster
+    if (progress === 1) {
+        setTimeout(() => {
+            gateContainer.style.opacity = "0";
+            gateContainer.style.visibility = "hidden";
+            
+            // Redirect quickly
+            setTimeout(() => {
+                window.location.href = "portfolio.php"; // Change this URL
+            }, 200); // Faster redirect
+        }, 200);
+    }
+
+    // Reset gates when scrolling to top
+    if (scrollY === 0) {
+        gateContainer.style.opacity = "1";
+        gateContainer.style.visibility = "visible";
+        leftGate.style.transform = "translateX(0)";
+        rightGate.style.transform = "translateX(0)";
+    }
+});
+
+  
+
+
+    </script>
+ 
+</body>
+</html>	
+ 
